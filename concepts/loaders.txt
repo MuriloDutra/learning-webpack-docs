@@ -1,0 +1,22 @@
+Webpack understands .js and .json files by default and can turn those type of files into modules easily,
+but with other files like: .css, .jpg, .otf and etc, webpack needs a little help, that's why Loaders exist.
+They get these files that Webpack can't understand and transform them into modules to Webpack,
+then these new modules are attached to your final bundle.
+
+
+EXAMPLE:
+const path = require('path');
+
+module.exports = {
+  output: {
+    filename: 'my-first-webpack.bundle.js',
+  },
+  module: {
+    rules: [{ test: /\.txt$/, use: 'raw-loader' }],
+  },
+};
+
+1- The test property identifies which file or files should be transformed.
+2 - The use property indicates which loader should be used to do the transforming.
+
+Source: https://webpack.js.org/concepts/#loaders
