@@ -1,0 +1,14 @@
+Output is the place where webpack's gonna store the generated bundle, you can configure the location and filename.
+
+EXAMPLE:
+const path = require('path');
+
+module.exports = {
+  entry: './path/to/my/entry/file.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'my-first-webpack.bundle.js',
+  },
+};
+
+Source: https://webpack.js.org/concepts/#loaders
