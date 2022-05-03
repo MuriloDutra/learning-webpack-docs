@@ -1,0 +1,16 @@
+Plugins are responsible to offer a variety of possibilities to your final bundle,
+like bundle optimization, asset management and injection of environment variables.
+They also serve the purpose of doing anything else that a loader cannot do
+
+EXAMPLE:
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack'); //to access built-in plugins
+
+module.exports = {
+  module: {
+    rules: [{ test: /\.txt$/, use: 'raw-loader' }],
+  },
+  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+};
+
+Source: https://webpack.js.org/concepts/#plugins
