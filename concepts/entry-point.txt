@@ -1,0 +1,11 @@
+An entry point is the first file webpack will read to start bundling your application.
+Webpack is also capable of identifying the dependencies your entry point file has and then load them as well.
+Once webpack loaded the dependencies from your entry point, it's gonna check if these dependencies also have
+dependencies and load them and so on.
+
+EXAMPLE:
+module.exports = {
+  entry: './path/to/my/entry/file.js',
+};
+
+Source: https://webpack.js.org/concepts/#entry
