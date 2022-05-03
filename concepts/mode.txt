@@ -1,0 +1,8 @@
+Through out the mode property, you can enable webpack's built-in optimizations that correspond to each environment.
+
+EXAMPLE:
+module.exports = {
+  mode: 'production',
+};
+
+Source: https://webpack.js.org/concepts/#mode
